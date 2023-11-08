@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from "react";
 
 export default function Meme() {
     const [meme, setMeme] = React.useState({
