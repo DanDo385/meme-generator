@@ -1,5 +1,6 @@
 // Meme.js
 import React from 'react';
+import '../style.css';
 
 export default function Meme() {
     const [meme, setMeme] = React.useState({
@@ -58,10 +59,14 @@ export default function Meme() {
                     Get a new meme image 🖼
                 </button>
             </div>
-            <div className="meme">
-                <img src={meme.randomImage} className="meme--image" alt="Meme" />
-                <h2 className="meme--text top">{meme.topText}</h2>
-                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            <div className="meme" style={{ width: '250px', height: '250px', position: 'relative', overflow: 'hidden' }}>
+                <img src={meme.randomImage} 
+                    className="meme--image"
+                    alt="Meme" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <h2 className="meme--text top" >{meme.topText}</h2>
+                <h2 className="meme--text bottom" >{meme.bottomText}</h2>
             </div>
         </main>
     );

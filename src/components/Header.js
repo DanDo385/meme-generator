@@ -1,6 +1,6 @@
 import React from 'react';
 import trollface from '../assets/images/troll-face.png';
-
+import '../style.css';
 
 export default function Header() {
     return (
@@ -11,7 +11,7 @@ export default function Header() {
                 alt="troll"
             />
             <h2 className="header--title">Meme Generator</h2>
-            <h4 className="header--project">Funny Memes Only</h4>
+            <h4 className="header--project">Funny Memes Only Please</h4>
         </header>
     )
 }
